@@ -38,6 +38,12 @@ class UserController {
         })
       }
 
+      if (req.params.id != req.userId) {
+        return res.status(401).json({
+          errors: ['Não autorizado']
+        })
+      }
+
       const user = await User.findByPk(req.params.id);
 
       if (!user) {
