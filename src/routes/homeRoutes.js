@@ -3,7 +3,9 @@ import userController from '../controllers/UserController';
 import alunoController from '../controllers/AlunoController'
 const router = new Router();
 
-router.post('/alunos', alunoController.store);
+router.post('/', (req, res) => {
+  res.send('ok')
+});
 
 /*router.post('/users', userController.store);*/
 

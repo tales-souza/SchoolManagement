@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "teste",
-    "password": "teste",
-    "database": "teste",
-    "host": "teste",
-    "dialect": "teste"
+    "username": "root",
+    "password": "root",
+    "database": "escola",
+    "host": "localhost",
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
